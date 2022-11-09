@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: elastic-search
+  name: demo
+spec:
+  selector:
+    matchLabels:
+      app: demo
+  
+  template:
+    metadata:
+      labels:
+        app: demo
+    
+    spec:
+      containers:
+      - name: demo 
+        image: kky0426/demo-docker
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080

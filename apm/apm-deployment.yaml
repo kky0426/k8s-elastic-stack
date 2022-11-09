@@ -20,7 +20,7 @@ spec:
         image: docker.elastic.co/apm/apm-server:7.7.0
         env:
         - name: ELASTICSEARCH_HOST
-          value: elasticsearch-svct.elastic-search.svc.cluster.local
+          value: elasticsearch-svc.elastic-search.svc.cluster.local
         - name: ELASTICSEARCH_PORT
           value: "9200"
         - name: KIBANA_HOST
