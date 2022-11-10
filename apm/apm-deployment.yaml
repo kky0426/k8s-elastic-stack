@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: apm-server
-        image: docker.elastic.co/apm/apm-server:7.7.0
+        image: docker.elastic.co/apm/apm-server:7.17.7
         env:
         - name: ELASTICSEARCH_HOST
           value: elasticsearch-svc.elastic-search.svc.cluster.local
